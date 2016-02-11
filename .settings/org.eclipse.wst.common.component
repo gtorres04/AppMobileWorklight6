@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="ManageLocationWorklightJQM">
+        <wb-resource deploy-path="/" source-path="/apps/ManageLocationWorklightJQM/common"/>
+        <wb-resource deploy-path="/" source-path="/apps/ManageLocationWorklightJQM/iphone"/>
+        <wb-resource deploy-path="/" source-path="/apps/ManageLocationWorklightJQM/android"/>
+        <property name="context-root" value="ManageLocationWorklightJQM"/>
+    </wb-module>
+</project-modules>

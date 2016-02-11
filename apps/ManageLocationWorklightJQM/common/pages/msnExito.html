@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../jqueryMobile/jquery-1.9.1.min.js"></script>
+	<script src="../js/myjs/listar.js"></script>
+	<script src="../js/myjs/registrar.js"></script>
+	<link rel="stylesheet" href="../jqueryMobile/jquery.mobile-1.3.2.css" />
+	
+	<script>
+    $(document).bind('mobileinit',function(){
+        $.mobile.changePage.defaults.changeHash = false;
+        $.mobile.hashListeningEnabled = false;
+        $.mobile.pushStateEnabled = false;
+    });
+</script> 
+	<script src="../jqueryMobile/jquery.mobile-1.3.2.js"></script>
+	
+</head>
+<body>
+	<div data-role="page" id="dialog">
+		<div data-role="header">
+			<h1>Mensaje</h1>
+		</div>
+		<div data-role="main" class="ui-dialog-content">
+			Contenido  
+		</div>		
+	</div>
+</body>
+</html>
