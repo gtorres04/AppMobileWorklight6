@@ -33,7 +33,7 @@
         <key>Key</key>
         <string>serverURL</string>
         <key>DefaultValue</key>
-        <string>http://10.125.64.80:10080/ManageLocationWorklightJQM/</string>
+        <string>http://10.125.64.42:10080/ManageLocationWorklightJQM/</string>
         <key>KeyboardType</key>
         <string>Alphabet</string>
       </dict>

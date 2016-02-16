@@ -1,4 +1,4 @@
-#Mon Feb 15 17:26:46 COT 2016
+#Tue Feb 16 08:33:53 COT 2016
 base.iphone=2171377823
 base.android=2148638498
 encoding//apps/ManageLocationWorklightJQM/common/index.html=ISO-8859-1
@@ -19,5 +19,5 @@ base.ipad=2171377823
 ManageLocationWorklightJQM.ipad.native=2171377823
 encoding//apps/ManageLocationWorklightJQM/iphone/css/main.css=UTF-8
 ManageLocationWorklightJQM.iphone.native=2171377823
-analytics.iphone=2495606965
 analytics.android=2408201680
+analytics.iphone=2495606965
