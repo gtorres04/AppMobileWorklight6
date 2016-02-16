@@ -1,5 +1,5 @@
 function wlCommonInit(){
-
+	listarPaises();
 	/*
 	 * Application is started in offline mode as defined by a connectOnStartup property in initOptions.js file.
 	 * In order to begin communicating with Worklight Server you need to either:

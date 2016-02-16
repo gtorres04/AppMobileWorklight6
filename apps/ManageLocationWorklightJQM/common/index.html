@@ -21,7 +21,7 @@
 			</div>
 			<div data-role="content" id="contentMenu">
 				<a href="pages/registrar.html" data-role="button" data-icon="plus" data-prefetch="true">Registrar</a>
-				<a href="pages/listar.html" data-role="button" data-icon="bars" data-prefetch="true">Listar</a>
+				<a href="pages/listar.html" data-role="button" data-icon="bars" data-prefetch="true" onclick="listarPaises()">Listar</a>
 			</div>
 			<div data-role="footer" id="footerMenu">
 				<h1>Pragma.com</h1>
@@ -29,6 +29,16 @@
 		</div>
 		<!-- /PAGINA MENU PAIS -->
 		
+		<!-- PAGINA MSN DIALOG -->
+		<div data-role="page" id="dialog">
+			<div data-role="header" id="headerDialog">
+				<h1>Mensaje</h1>
+			</div>
+			<div data-role="content" id="contentDialog">
+				Contenido  
+			</div>		
+		</div>
+		<!-- /PAGINA MSN DIALOG -->
 		<!-- PAGINA DE LISTAR PAISES -->
 		<!-- <div data-role="page" id="listar">
 			<div data-role="header">
@@ -77,6 +87,8 @@
 			</div>		
 		</div> -->
 		<!-- /DIALOG -->
+		<script src="js/myjs/listar.js"></script>
+		<script src="js/myjs/registrar.js"></script>
    		<script src="js/initOptions.js"></script>
    		<script src="js/main.js"></script>
    		<script src="js/messages.js"></script>

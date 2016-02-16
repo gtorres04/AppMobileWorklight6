@@ -1,0 +1,116 @@
+<!DOCTYPE HTML><html>
+    <head>
+        <meta charset="UTF-8">
+        <title>index</title>
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" name="viewport">
+        <link href="worklight/worklight.css" rel="stylesheet">
+        <link href="images/favicon.png" rel="shortcut icon">
+        <link href="images/apple-touch-icon.png" rel="apple-touch-icon">
+        <link href="jqueryMobile/jquery.mobile.theme-1.3.2.css" rel="stylesheet">
+        <link href="jqueryMobile/jquery.mobile.structure-1.3.2.css" rel="stylesheet">
+        <link href="jqueryMobile/jquery.mobile-1.3.2.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
+        <script>
+		// Define WL namespace.
+		var WL = WL ? WL : {};
+		/**
+		 * WLClient configuration variables.
+		 * Values are injected by the deployer that packs the gadget.
+		 */
+		 WL.StaticAppProps = {
+   "APP_DISPLAY_NAME": "ManageLocationWorklightJQM",
+   "APP_ID": "ManageLocationWorklightJQM",
+   "APP_SERVICES_URL": "\/apps\/services\/",
+   "APP_VERSION": "1.0",
+   "ENVIRONMENT": "android",
+   "LOGIN_DISPLAY_TYPE": "embedded",
+   "WORKLIGHT_NATIVE_VERSION": "2148638498",
+   "WORKLIGHT_PLATFORM_VERSION": "6.1.0.02.20141216-0421",
+   "WORKLIGHT_ROOT_URL": "\/apps\/services\/api\/ManageLocationWorklightJQM\/android\/"
+};
+</script>
+		<script src="worklight/cordova.js"></script>
+		<script src="worklight/wljq.js"></script>
+		<script src="worklight/worklight.js"></script>
+		<script src="worklight/checksum.js"></script>
+		<script>window.$ = window.jQuery = WLJQ;</script>
+   		<script src="jqueryMobile/jquery.mobile-1.3.2.js"></script>
+    </head>
+    <body style="display: none;">
+   		<!-- PAGINA MENU PAIS -->
+        <div data-role="page" id="menu">
+            <div data-role="header" id="headerMenu">
+                <h1>Menu Pais</h1>
+            </div>
+            <div data-role="content" id="contentMenu">
+                <a data-icon="plus" data-prefetch="true" data-role="button" href="pages/registrar.html">Registrar</a>
+				<a data-icon="bars" data-prefetch="true" data-role="button" href="pages/listar.html" onclick="listarPaises()">Listar</a>
+            </div>
+            <div data-role="footer" id="footerMenu">
+                <h1>Pragma.com</h1>
+            </div>
+        </div>
+		<!-- /PAGINA MENU PAIS -->
+		<!-- PAGINA MSN DIALOG -->
+        <div data-role="page" id="dialog">
+            <div data-role="header" id="headerDialog">
+                <h1>Mensaje</h1>
+            </div>
+            <div data-role="content" id="contentDialog">
+				Contenido  
+			</div>		
+        </div>
+		<!-- /PAGINA MSN DIALOG -->
+		<!-- PAGINA DE LISTAR PAISES -->
+		<!-- <div data-role="page" id="listar">
+			<div data-role="header">
+				<a href="#main" data-icon="arrow-l" data-prefetch="true">Atras</a>
+				<h1>LISTADO PAISES</h1>
+			</div>
+			<div data-role="content" >
+				<ol data-role="listview" id="listadoPaises">
+				</ol>
+			</div>
+			<div data-role="footer">
+				<h1>Pragma.com</h1>
+			</div>
+		</div> -->
+		<!-- /PAGINA DE LISTAR PAISES -->
+		<!-- PAGINA DE REGISTRAR PAIS -->
+		<!-- <div data-role="page" id="registrar">
+			<div data-role="header">
+				<a href="#main" data-icon="arrow-l" data-prefetch="true">Atras</a>
+				<h1>REGISTRAR PAISES</h1>
+			</div>
+			<div data-role="content">
+				<form method="post" id="form">
+					 <label for="codigoPais">Codigo:</label>
+					 <input data-clear-btn="true" type="text" data-clear-btn="true" name="codigoPais" id="codigoPais" value="">
+					 <label for="nombrePais">Nombre: </label>
+					 <input data-clear-btn="true" type="text" data-clear-btn="true" name="nombrePais" id="nombrePais" value="">
+					 <a id="idBotonRegistrar" href="#" data-role="button" data-theme="a" data-inline="true">Registrar</a>
+					 <a id="idBotonCancelar" href="#dialog" data-role="button" data-theme="b" data-inline="true" data-rel="dialog">Cancelar</a>
+				</form>
+			</div>
+			<div data-role="footer">
+				<h1>Pragma.com</h1>
+			</div>
+		</div> -->
+		<!-- /PAGINA DE REGISTRAR PAIS -->
+		<!-- DIALOG -->
+		<!-- <div data-role="page" id="dialog">
+			<div data-role="header">
+				<h1>Mensaje</h1>
+			</div>
+			<div data-role="main" class="ui-content">
+				Contenido
+			</div>		
+		</div> -->
+		<!-- /DIALOG -->
+        <script src="js/myjs/listar.js"></script>
+		<script src="js/myjs/registrar.js"></script>
+   		<script src="js/initOptions.js"></script>
+   		<script src="js/main.js"></script>
+   		<script src="js/messages.js"></script>
+    </body>
+</html>

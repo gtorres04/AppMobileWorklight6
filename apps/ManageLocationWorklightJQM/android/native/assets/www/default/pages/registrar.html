@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+   	<head>
+   		<meta charset="UTF-8">
+   		<title>index</title>
+   		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+   		<link rel="shortcut icon" href="images/favicon.png">
+   		<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+   		<link href="jqueryMobile/jquery.mobile.theme-1.3.2.css" rel="stylesheet">
+   		<link href="jqueryMobile/jquery.mobile.structure-1.3.2.css" rel="stylesheet">
+   		<link href="jqueryMobile/jquery.mobile-1.3.2.css" rel="stylesheet">
+   		<link rel="stylesheet" href="css/main.css">
+   		<script>window.$ = window.jQuery = WLJQ;</script>
+   		<script src="jqueryMobile/jquery.mobile-1.3.2.js"></script>
+   	</head>
+   	<body style="display: none;">
+		<div data-role="page" id="registrar">
+			<div data-role="header" id="headerRegistrar">
+				<a href="#menu" data-icon="arrow-l">Atras</a>
+				<h1>REGISTRAR PAISES</h1>
+			</div>
+			<div data-role="content" id="contentRegistrar">
+				<form method="post" id="form">
+					 <label for="codigoPais">Codigo:</label>
+					 <input type="text" data-clear-btn="true" name="codigoPais" id="codigoPais" value="">
+					 <label for="nombrePais">Nombre: </label>
+					 <input type="text" data-clear-btn="true" name="nombrePais" id="nombrePais" value="">
+					 <a id="idBotonRegistrar" href="#" data-role="button" data-theme="a" data-inline="true" onclick="registrarPais()">Registrar</a>
+					 <a id="idBotonCancelar" href="#" data-role="button" data-theme="b" data-inline="true">Cancelar</a>
+				</form>
+			</div>
+			<div data-role="footer" id="footerRegistrar">
+				<h1>Pragma.com</h1>
+			</div>
+		</div>
+   	</body>
+</html>

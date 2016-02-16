@@ -14,7 +14,7 @@ function listarPaises(){
 	WL.Client.invokeProcedure(invocationData, options);
  }
 function resultadoExitoso(resultado){
-	alert("entro al resultado exito");
+	removerlistaPaises();
 	if(resultado.invocationResult.array){
 		var cantidadObjetos=resultado.invocationResult.array.length;
 		for (var i = 0; i < cantidadObjetos; i++) {
@@ -30,8 +30,5 @@ function resultadoErroneo(resultado){
 function removerlistaPaises(){
 	$("#listadoPaises li").remove();
 }
-function actualizarlistarPaises(){
-	removerlistaPaises();
-	listarPaises();
-}
-listarPaises();
+
+

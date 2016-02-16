@@ -2,7 +2,6 @@
  * 
  */
 function registrarPais(){
-	alert("ENTRO AL METOD REGISTRAR");
 	var codigoPais=$("#codigoPais").val();
 	var nombrePais=$("#nombrePais").val();
 	var invocationData = {
@@ -11,18 +10,25 @@ function registrarPais(){
 			parameters : [codigoPais,nombrePais]
 	};
 	var options = {
-			onSuccess : resultadoExitoso,
-			onFailure : resultadoErroneo
+			onSuccess : resultadoExitosoRegistrar,
+			onFailure : resultadoErroneoRegistrar
 	};
 	WL.Client.invokeProcedure(invocationData, options);
 }
-function resultadoExitoso(resultado){
-	alert("RESULTADO EXITOSO");
+function resultadoExitosoRegistrar(resultado){
 	$("#codigoPais").val("");
     $("#nombrePais").val("");
-	var cantidadObjetos=resultado.invocationResult.codigo;
-	alert("CODIGO-->"+cantidadObjetos);
+	var mensaje=resultado.invocationResult.array[0];
+	var codigo=mensaje.codigo;
+	var titulo=mensaje.titulo;
+	var desc=mensaje.descripcion;
+	if(codigo=="OK"){
+		confirm("CODIGO-->"+codigo+"\nTITULO: "+titulo+"\nDESCRIPCION: "+desc+"\n");
+	}else{
+		alert("CODIGO-->"+codigo+"\nTITULO: "+titulo+"\nDESCRIPCION: "+desc+"\n")
+	}
+	
 }
-function resultadoErroneo(resultado){
+function resultadoErroneoRegistrar(resultado){
 	alert("Error al registrar el pais-->"+resultado);
 }
